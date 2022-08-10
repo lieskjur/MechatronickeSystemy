@@ -1,6 +1,6 @@
 import Pkg
 Pkg.add("Documenter")
-include("docs/make.jl")
+include("make.jl")
 deploydocs(
     repo = "github.com/lieskjur/MechatronickeSystemy.git",
     target = "build",
