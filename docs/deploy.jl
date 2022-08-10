@@ -4,7 +4,7 @@ using Documenter
 using MechatronickeSystemy
 push!(LOAD_PATH,"../src/")
 makedocs(
-    sitename="Mechatronické Systémy"
+    sitename="Simulace a řízení mechatronických systémů"
 )
 deploydocs(
     repo = "github.com/lieskjur/MechatronickeSystemy.git",

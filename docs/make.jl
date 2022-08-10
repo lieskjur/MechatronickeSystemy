@@ -1,7 +1,6 @@
 using Documenter, MechatronickeSystemy
-# push!(LOAD_PATH,"../src/")
 makedocs(
-    sitename="Mechatronické Systémy"
+    sitename="Simulace a řízení mechatronických systémů"
 )
 
-# julia -e 'using LiveServer; serve(dir="docs/build",port=8005)'
+# julia -e 'using LiveServer; serve(dir="docs/build")'
