@@ -43,4 +43,6 @@ Pokud definujeme odchylku jeho stavu od stavu systému jako ``\bm{ε} = \bm{x} -
 
 Systém po té můžeme řídit pomocí zpětné vazby používající stavy pozorovatele (viz. obrázek)
 
+---
+
 ![Stavový pozorovatel](figures/StavovyPozorovatel.svg)
