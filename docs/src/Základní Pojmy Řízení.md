@@ -12,3 +12,10 @@ Systém je pozorovatelný pokud na konečném časovém intervalu lze ze změře
 
 ### Rekonstruovatelnost
 Systém je rekonstruovatelný pokud na konečném časovém intervalu lze ze změřeného průběhu vstupů ``\bm{u}`` a výstupů ``\bm{y}`` určit stav systému na konci intervalu ``\bm{x} ∈ \mathbb{R}^n``.
+
+---
+
+U lineárních systémů platí
+
+* říditelný systém je také dosažitelný
+* pozorovatelný systém je také rekonstruovatelný
