@@ -2,3 +2,6 @@ name = "MechatronickeSystemy"
 uuid = "7f9b6b55-eee6-4767-ab91-0abe8fef720d"
 authors = ["WJvg82y6W6LAqXcJ <jVx7V9td>"]
 version = "0.1.0"
+
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
