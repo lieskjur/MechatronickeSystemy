@@ -7,7 +7,7 @@ Uvažujeme-li lineární systém ve tvaru
 ```
 jeho stav v závislosti na počátečním stavu ``\bm{x}_0 = \bm{x}(0)`` a času ``t`` lze popsat rovnicí
 ```math
-\bm{x}(t) = e^{\bm{A}t}\bm{x}_0 ,\quad e^{\bm{A}t} = \bm{I} + \bm{A}t + \frac{\bm{A}^2t}{2!} + \frac{\bm{A}^3t}{3!} + \dots
+\bm{x}(t) = e^{\bm{A}t}\bm{x}_0
 ```
 
 ---
