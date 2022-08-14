@@ -4,20 +4,32 @@ makedocs(
     pages = [
         "index.md",
         "Řízené mechanické systémy" => [
-            "Základní Pojmy Řízení.md",
-            "Stabilita lineárních systémů.md",
-            "Říditelnost lineárního systému.md",
-            "Pozorovatelnost lineárního systému.md",
-            "Výstupní zpětná vazba.md",
-            "Stavový Pozorovatel.md",
-            "Převod stavového popisu systému na přenosový popis.md",
-            "Diskretizace Lineárních Systémů.md",
-            "Prediktivní řízení.md",
-            "Kritérium Optimality.md",
-            "Pontrjaginův princip maxima.md",
-            "Algebraické Riccatiho Rovnice.md",
+            "RMS/Základní Pojmy Řízení.md",
+            # "Lineární systémy v časové oblasti" => [
+            "RMS/Stabilita lineárních systémů.md",
+            "RMS/Říditelnost lineárního systému.md",
+            "RMS/Pozorovatelnost lineárního systému.md",
+            "RMS/Výstupní zpětná vazba.md",
+            "RMS/Stavový Pozorovatel.md",
+            # ],
+            # "Lineární systémy ve frekvenční oblasti \Rightarrow ["
+            "RMS/Převod stavového popisu systému na přenosový popis.md",
+            # "Bodeho Diagram.md"
+            # ],
+            # "Diskrétní lineární systémy" => [
+            "RMS/Diskretizace Lineárních Systémů.md",
+            "RMS/Prediktivní řízení.md",
+            # ],
+            "Optimální řízení" => [
+                hide("RMS/Optimální řízení/Kritérium optimality.md"),
+                "RMS/Optimální řízení/Bellmanova funkce.md",
+                "RMS/Optimální řízení/Pontrjaginův princip minima.md",
+                "RMS/Optimální řízení/LQR.md",
+                ]
             ],
         "Řízené aktivní struktury" => [
+            "LAC vs. HAC" => "RAS/LAC vs HAC.md",
+            "RAS/Typy aktivních a poloaktivních aktuátorů.md"
             ],
         "Simulace mechatronických systémů" => [
             ],
