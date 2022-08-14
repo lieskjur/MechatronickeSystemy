@@ -2,14 +2,16 @@ Kritérium optimality
 ====================
 
 ```math
-J = \int_{t_0}^{t_1} L(\bm{x},\bm{u},t)\,dt
+J = \int_{t_0}^{t_1} L(\bm{x}(τ),\bm{u}(τ),τ)\,dτ
 ```
-kde ``\bm{L}`` je Lagrangián
+kde ``L(\bm{x}(τ),\bm{u}(τ),τ)`` je Lagrangián
 
-- ``L = \bm{u}^T \bm{R}\,\bm{u}`` - spotřeby energie
-- ``L = \bm{x}^T \bm{Q}\,\bm{x}`` - odchýlení od počátku
-- ``L = \|\bm{u}\|`` - spotřeby paliva
+- ``L = \bm{u}(τ)^T \bm{R}\,\bm{u}(τ)`` - spotřeby energie
+- ``L = \bm{x}(τ)^T \bm{Q}\,\bm{x}(τ)`` - odchýlení od počátku
+- ``L = \|\bm{u}(τ)\|`` - spotřeby paliva
 - ``L = 1`` - času
+
+přičemž vyjmenováné formy můžeme sčítat
 
 ## Dosažení koncového stavu
 
@@ -19,5 +21,5 @@ Do kritéria optimality s konečným horizontem se často zahrňuje i funkce př
 ```
 kdy
 ```math
-J = Φ(\bm{x}(t_1),t_1) + \int_{t_0}^{t_1} L(\bm{x},\bm{u},t)\,dt
+J = Φ(\bm{x}(t_1),t_1) + \int_{t_0}^{t_1} L(\bm{x}(τ),\bm{u}(τ),τ)\,dτ
 ```

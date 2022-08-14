@@ -23,8 +23,9 @@ makedocs(
             # "Optimální řízení"
             "RMS/Kritérium Optimality.md",
             "RMS/Bellmanova funkce.md",
-            "RMS/Pontrjaginův princip maxima.md",
-            "RMS/Algebraické Riccatiho Rovnice.md",
+            "RMS/Pontrjaginův princip minima.md",
+            "RMS/LQR.md",
+            # "RMS/Algebraické Riccatiho Rovnice.md",
             ],
         "Řízené aktivní struktury" => [
             "LAC vs. HAC" => "RAS/LAC vs HAC.md",
