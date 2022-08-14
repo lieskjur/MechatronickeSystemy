@@ -22,6 +22,7 @@ makedocs(
             # ],
             # "Optimální řízení"
             "RMS/Kritérium Optimality.md",
+            "RMS/Bellmanova funkce.md",
             "RMS/Pontrjaginův princip maxima.md",
             "RMS/Algebraické Riccatiho Rovnice.md",
             ],
