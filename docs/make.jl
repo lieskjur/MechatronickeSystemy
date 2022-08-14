@@ -4,18 +4,26 @@ makedocs(
     pages = [
         "index.md",
         "Řízené mechanické systémy" => [
-            "Základní Pojmy Řízení.md",
-            "Stabilita lineárních systémů.md",
-            "Říditelnost lineárního systému.md",
-            "Pozorovatelnost lineárního systému.md",
-            "Výstupní zpětná vazba.md",
-            "Stavový Pozorovatel.md",
-            "Převod stavového popisu systému na přenosový popis.md",
-            "Diskretizace Lineárních Systémů.md",
-            "Prediktivní řízení.md",
-            "Kritérium Optimality.md",
-            "Pontrjaginův princip maxima.md",
-            "Algebraické Riccatiho Rovnice.md",
+            "RMS/Základní Pojmy Řízení.md",
+            # "Lineární systémy v časové oblasti" => [
+            "RMS/Stabilita lineárních systémů.md",
+            "RMS/Říditelnost lineárního systému.md",
+            "RMS/Pozorovatelnost lineárního systému.md",
+            "RMS/Výstupní zpětná vazba.md",
+            "RMS/Stavový Pozorovatel.md",
+            # ],
+            # "Lineární systémy ve frekvenční oblasti \Rightarrow ["
+            "RMS/Převod stavového popisu systému na přenosový popis.md",
+            # "Bodeho Diagram.md"
+            # ],
+            # "Diskrétní lineární systémy" => [
+            "RMS/Diskretizace Lineárních Systémů.md",
+            "RMS/Prediktivní řízení.md",
+            # ],
+            # "Optimální řízení"
+            "RMS/Kritérium Optimality.md",
+            "RMS/Pontrjaginův princip maxima.md",
+            "RMS/Algebraické Riccatiho Rovnice.md",
             ],
         "Řízené aktivní struktury" => [
             ],

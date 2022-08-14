@@ -51,4 +51,4 @@ kde dolní index ``k`` značí veličinu v čase ``t = kT``.
 
 ---
 
-[Zdroj](misc/LinearODE-Discretization.pdf)
+[Zdroj](../literature/LinearODE-Discretization.pdf)
