@@ -26,6 +26,8 @@ makedocs(
             "RMS/Algebraické Riccatiho Rovnice.md",
             ],
         "Řízené aktivní struktury" => [
+            "LAC vs. HAC" => "RAS/LAC vs HAC.md",
+            "RAS/Typy aktivních a poloaktivních aktuátorů.md"
             ],
         "Simulace mechatronických systémů" => [
             ],
