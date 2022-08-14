@@ -76,28 +76,4 @@ přičemž ``V^*(\bm{x}(t))`` můžeme vykrátit, vzhledem k tomu předpokládá
 L(\bm{x}(τ),\bm{u}(τ)) + \frac{∂V^*(\bm{x}(t))}{∂\bm{x}}\bm{f}(\bm{x}(τ),\bm{u}(τ))
 \ dτ
 ```
-
----
-
-Jelikož pro rozumnou funkci ``g(\bm{u}(τ))`` platí
-```math
-\lim_{Δt → 0} \argmin_{\bm{u}(τ)} \left( ∫_{t}^{t+Δt} g(\bm{u}(τ))\, dτ \right) → \argmin_{\bm{u}(t)} g(\bm{u}(t))
-```
-co se týče určeni optimálního vstupu, můžeme, jako limitně blížící se k námi odvozené poslední rovnici, považovat tzv. *Bellmanovu diferenciální rovnici*
-```math
-0
-=
-\min_{\bm{u}(t)} \left(
-	L(\bm{x}(t),\bm{u}(t))
-	+
-	\frac{∂V^*(\bm{x}(t))}{∂\bm{x}}\bm{f}(\bm{x}(t),\bm{u}(t),t) 
-\right)
-```
-kde
-```math
-\bm{u}^*_\text{opt}(t) = \argmin_{\bm{u}(t)} \left(
-	L(\bm{x}(t),\bm{u}(t))
-	+
-	\frac{∂V^*(\bm{x}(t))}{∂\bm{x}}\bm{f}(\bm{x}(t),\bm{u}(t),t) 
-\right)
-```
+S touto rovnicí budeme dále nakládat při odvozování **LQR** a **Pontrjaginova principu minima**
