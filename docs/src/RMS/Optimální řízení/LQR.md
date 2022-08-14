@@ -5,7 +5,7 @@ Linear Quadratic Regulator (LQR) je určen pro regulaci lineárního systému ve
 ```math
 \bm{\dot{x}}(τ) = \bm{f}(\bm{x}(τ),\bm{u}(τ),τ) = \bm{A} \bm{x}(τ) + \bm{B} \bm{u}(τ)
 ```
-s kvadratickým Lagrangiánem [kritéria optimality](Kritérium Optimality.md)
+s kvadratickým Lagrangiánem [kritéria optimality](Kritérium optimality.md)
 ```math
 L(\bm{x}(τ),\bm{u}(τ),τ) = \bm{x}(τ)^T \bm{Q} \, \bm{x}(τ) + \bm{u}(τ)^T \bm{R} \, \bm{u}(τ)
 ```

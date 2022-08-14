@@ -20,12 +20,12 @@ makedocs(
             "RMS/Diskretizace Lineárních Systémů.md",
             "RMS/Prediktivní řízení.md",
             # ],
-            # "Optimální řízení"
-            "RMS/Kritérium Optimality.md",
-            "RMS/Bellmanova funkce.md",
-            "RMS/Pontrjaginův princip minima.md",
-            "RMS/LQR.md",
-            # "RMS/Algebraické Riccatiho Rovnice.md",
+            "Optimální řízení" => [
+                hide("RMS/Optimální řízení/Kritérium optimality.md"),
+                "RMS/Optimální řízení/Bellmanova funkce.md",
+                "RMS/Optimální řízení/Pontrjaginův princip minima.md",
+                "RMS/Optimální řízení/LQR.md",
+                ]
             ],
         "Řízené aktivní struktury" => [
             "LAC vs. HAC" => "RAS/LAC vs HAC.md",

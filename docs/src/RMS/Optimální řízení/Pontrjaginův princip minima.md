@@ -3,11 +3,20 @@ Pontrjaginův princip minima
 
 Při Pontrjaginova principu minima nahrazujeme ``F(\bm{x}(τ),\bm{u}(τ),τ)`` ve variační úloze, odvozené z [Bellmanovy funkce](Bellmanova funkce.md), Hamiltoniánem
 ```math
-H(\bm{x}(τ),\bm{u}(τ),\bm{λ}(τ),τ) = L(\bm{x}(τ),\bm{u}(τ),τ) + \bm{\lambda}^T \bm{f}(\bm{x}(τ),\bm{u}(τ),τ)
+H(\bm{x}(τ),\bm{u}(τ),\bm{λ}(τ),τ) = L(\bm{x}(τ),\bm{u}(τ),τ) + \bm{\lambda}(τ)^T \bm{f}(\bm{x}(τ),\bm{u}(τ),τ)
 ```
 kde (stavový) vektor multiplikátorů ``\bm{λ}(τ)`` zastupuje okamžitou parciální derivaci Bellmanovy funkce
 ```math
 \bm{λ}(τ)^T = \frac{∂J^*(\bm{x}(τ),t)}{∂\bm{x}(τ)}
+```
+Tzn. řešíme variační úlohu
+```math
+0
+=
+\min_{\bm{u}(τ)}
+∫_t^{t+Δt}
+H(\bm{x}(τ),\bm{u}(τ),\bm{λ}(τ),τ)
+\ dτ
 ```
 
 ---

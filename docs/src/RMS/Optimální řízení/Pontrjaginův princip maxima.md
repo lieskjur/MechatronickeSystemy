@@ -12,7 +12,7 @@ Optimální řízení dle Pontrjaginova principu maxima vychází z Hamiltonián
 H(\bm{x},\bm{u},\bm{p},t) = - L(\bm{x},\bm{u},t) + \bm{p}^T\bm{f}(\bm{x},\bm{u},t)
 ```
 , kde ``\bm{p}(t)`` jsou konjugované proměnné ke stavům systému a ``L`` je Lagrangián
-(viz. [cílový funkcionál](Kritérium Optimality.md)).
+(viz. [cílový funkcionál](Kritérium optimality.md)).
 
 ### Optimální zásah řízení
 Parciální derivací Hamiltoniánu podle stavových proměnných ``\bm{x}(t)`` a k nim konjugovaným ``\bm{p}(t)``:

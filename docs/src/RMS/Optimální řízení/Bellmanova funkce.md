@@ -1,7 +1,7 @@
 Bellmanova funkce ve spojitém čase
 ==================================
 
-Pro systému ve tvaru ``\bm{\dot{x}}(τ) = \bm{f}(\bm{x}(τ),\bm{u}(τ),τ)`` můžeme definovat pro trajektorii ze stavu ``\bm{x}(t_0) = \bm{x}_0`` do času ``t_1`` [kritérium optimality](Kritérium Optimality.md) ve tvaru
+Pro systému ve tvaru ``\bm{\dot{x}}(τ) = \bm{f}(\bm{x}(τ),\bm{u}(τ),τ)`` můžeme definovat pro trajektorii ze stavu ``\bm{x}(t_0) = \bm{x}_0`` do času ``t_1`` [kritérium optimality](Kritérium optimality.md) ve tvaru
 ```math
 J = ∫_{t_0}^{t_1} L(\bm{x}(τ),\bm{u}(τ),τ)\,dτ
 ```
@@ -22,7 +22,7 @@ Pokud hledáme optimální řízení v bodě ``\bm{x}(t)`` můžeme rozdělit ce
 2. ``\bm{x}(τ) \,,\; τ ∈ ⟨t,t+Δt)`` s kritériem optimality ``\int_t^{t+Δt} L(\bm{x}(τ),\bm{u}(τ),τ)\,dτ``, pro který hledáme optimální řízení
 3. ``\bm{x}(τ) \,,\; τ ∈ ⟨t+Δt,t_1⟩`` na kterém předpokládáme optimální řízení a tudíž kritérium optimality ``J^*(\bm{x}(t+Δt),t+Δt)``
 
-![trajektorie](figures/Trajektorie.png)
+![trajektorie](../figures/Trajektorie.png)
 
 S definovanými úseky můžeme Bellmanovu funkci rozepsat do tvaru tzv. *Bellmanovy rovnice*
 ```math
