@@ -37,7 +37,7 @@ variační úlohy funkcionálu
 F(\bm{x}(τ),\bm{u}(τ),τ)
 \ dτ
 ```
-odvozené z [Bellmanovy funkce](Bellmanova funkce.md), kde
+odvozené z [Bellmanova principu optimality](Bellmanův princip optimality.md), kde
 ```math
 F(\bm{x}(τ),\bm{u}(τ),τ)
 =

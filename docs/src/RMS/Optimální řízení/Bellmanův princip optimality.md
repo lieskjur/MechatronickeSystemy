@@ -1,17 +1,17 @@
-Bellmanova funkce ve spojitém čase
-==================================
+Bellmanův princip optimality
+============================
 
-Pro systému ve tvaru ``\bm{\dot{x}}(τ) = \bm{f}(\bm{x}(τ),\bm{u}(τ),τ)`` můžeme definovat pro trajektorii ze stavu ``\bm{x}(t_0) = \bm{x}_0`` do času ``t_1`` [kritérium optimality](Kritérium optimality.md) ve tvaru
+Pro systému ve tvaru ``\bm{\dot{x}}(τ) = \bm{f}(\bm{x}(τ),\bm{u}(τ),τ)`` můžeme definovat pro trajektorii ze stavu ``\bm{x}(t_0) = \bm{x}_0`` do stavu ``\bm{x}(t_1)`` [kritérium optimality](Kritérium optimality.md) ve tvaru
 ```math
 J = ∫_{t_0}^{t_1} L(\bm{x}(τ),\bm{u}(τ),τ)\,dτ
 ```
-V libovolném čase ``t`` pak můžeme určit optimální řízení ze stavu ``\bm{x}(t)`` do koncového času ``t_1``
+V libovolném čase ``t`` pak můžeme určit optimální řízení ze stavu ``\bm{x}(t)`` do koncového stavu ``\bm{x}(t_1)``
 ```math
 \bm{u}^*(\bm{x}(τ),τ) = \argmin_{\bm{u}(τ)} ∫_{t}^{t_1} L(\bm{x}(τ),\bm{u}(τ),τ)\,dτ
 ```
 *Bellmanovou funkcí* budeme nazýváme kritérium optimality z bodu ``\bm{x}(t)`` do cíle, při optimálním řízení
 ```math
-J^*(\bm{x}(t),t) = \min_{\bm{u}(τ)} ∫_{t}^{t_1} L(\bm{x}(τ),\bm{u}^*(\bm{x}(τ),τ))\,dτ
+J^*(\bm{x}(t),t) = \min_{\bm{u}(τ)} ∫_{t}^{t_1} L(\bm{x}(τ),\bm{u}(τ),τ))\,dτ
 ```
 
 ---
@@ -60,13 +60,13 @@ J^*(\bm{x}(t),t)
     \frac{∂J^*(\bm{x}(t),t)}{∂τ} \ dτ
 \right)
 ```
-a pokud ``\bm{u}^*(\bm{x}(τ),τ)`` nezávisí explicitně na čase ``τ``, můžeme provést úpravu
+a provést úpravu
 ```math
 \frac{∂J^*(\bm{x}(t),t)}{∂τ}
 =
-\frac{∂J^*(\bm{x}(t),t)}{∂\bm{x}(τ)} \bm{f}(\bm{x}(τ),\bm{u}(τ),τ)
+\frac{∂J^*(\bm{x}(t),t)}{∂\bm{x}(τ)} \bm{f}(\bm{x}(τ),\bm{u}^*(τ),τ)
 ```
-Výsledkem jejího dosazení je rovnice vázané variační úlohy ve tvaru
+Výsledkem jejího dosazení je rovnice variační úlohy ve tvaru
 ```math
 0
 =
@@ -77,4 +77,4 @@ L(\bm{x}(τ),\bm{u}(τ),τ) + \frac{∂J^*(\bm{x}(t),t)}{∂\bm{x}(τ)}\bm{f}(\b
 }_{F(\bm{x}(τ),\bm{u}(τ),τ)}
 \ dτ
 ```
-ze které lze přímo odvodit [LQR](LQR.md) a [Pontrjaginův princip minima](Pontrjaginův princip minima.md).
+s pevným koncem ``\bm{x}(t)``. Z této rovnice lze přímo odvodit [LQR](LQR.md) a s úpravou [Pontrjaginův princip minima](Pontrjaginův princip minima.md).

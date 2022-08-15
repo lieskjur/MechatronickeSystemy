@@ -22,9 +22,9 @@ makedocs(
             # ],
             "Optimální řízení" => [
                 hide("RMS/Optimální řízení/Kritérium optimality.md"),
-                "RMS/Optimální řízení/Bellmanova funkce.md",
-                "RMS/Optimální řízení/Pontrjaginův princip minima.md",
+                "RMS/Optimální řízení/Bellmanův princip optimality.md",
                 "RMS/Optimální řízení/LQR.md",
+                "RMS/Optimální řízení/Pontrjaginův princip minima.md",
                 ]
             ],
         "Řízené aktivní struktury" => [
