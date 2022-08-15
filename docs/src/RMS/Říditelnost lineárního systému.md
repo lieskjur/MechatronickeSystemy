@@ -5,6 +5,9 @@ Stav lineárního systému ``\dot{\bm{x}} = \bm{A}\bm{x} + \bm{B}\bm{u}`` v čas
 ```math
 \bm{x}(t) = \int_0^t e^{\bm{A}(t-τ)} \bm{B} \bm{u}(τ)\ dτ
 ```
+
+## Matice říditelnosti
+
 Cayley-Hamiltonův teorém praví, že pro rozumnou matici ``\bm{A} ∈ \mathbb{R}^{n×n}`` lze exponenciání funkci ``e^{\bm{A}t}`` převést do tvaru
 ```math
 e^{\bm{A}t} = ϕ_0(t) \bm{I} + ϕ_1(t) \bm{A} + \dots + ϕ_{n-1}(t) \bm{A}^{n-1}
@@ -32,9 +35,15 @@ dτ
 \end{bmatrix}
 ```
 
----
-
 Všechny stavy systému ``\bm{x} ∈ \mathbb{R}^n`` jsou dosažitelné vhodnou volbou řízení ``\bm{u}`` právě tehdy, když
 ```math
 \text{rank}(\bm{R}) = n
+```
+
+## Gramián říditelnosti
+
+```math
+\bm{W}_{c}
+=
+\int_{0}^{\infty} e^{\bm{A} \tau} \bm{B} \bm{B}^T e^{\bm{A}^T \tau} d \tau
 ```

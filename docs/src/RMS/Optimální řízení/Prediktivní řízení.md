@@ -100,7 +100,7 @@ kde ``\bm{Q}`` a ``\bm{R}`` jsou váhové matice a ``\bm{Ŷ}`` vektor žádaný
 \begin{bmatrix}
 	\bm{Q}_{k+1} &  & \bm{0} \\
 	\vdots & \ddots & \\
-	\bm{0} & \dots & \bm{Q}_N
+	\bm{0} & \dots & \bm{Q}_{k+N}
 \end{bmatrix}
 \;,\quad 
 \bm{R}
@@ -108,7 +108,7 @@ kde ``\bm{Q}`` a ``\bm{R}`` jsou váhové matice a ``\bm{Ŷ}`` vektor žádaný
 \begin{bmatrix}
 	\bm{R}_{k} &  & \bm{0} \\
 	\vdots & \ddots & \\
-	\bm{0} & \dots & \bm{R}_{N-1}
+	\bm{0} & \dots & \bm{R}_{k+N-1}
 \end{bmatrix}
 ```
 Po dozazení ``\bm{Y} = \bm{f} + \bm{G}\bm{U}`` můžeme najít jeho minimum pomocí podmínky

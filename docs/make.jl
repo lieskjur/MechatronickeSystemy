@@ -33,7 +33,8 @@ makedocs(
             ],
         "Řízené aktivní struktury" => [
             "LAC vs. HAC" => "RAS/LAC vs HAC.md",
-            "RAS/Typy aktivních a poloaktivních aktuátorů.md"
+            "RAS/Typy aktivních a poloaktivních aktuátorů.md",
+            "RAS/Balancovaný tvar stavového popisu soustavy.md"
             ],
         "Simulace mechatronických systémů" => [
             ],
