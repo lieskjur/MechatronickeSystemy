@@ -5,8 +5,19 @@ makedocs(
         "index.md",
         "Řízené mechanické systémy" => [
             "RMS/Základní Pojmy Řízení.md",
+            "Stabilita systémů" => [
+                "lineárních" => "RMS/Stabilita systémů/Stabilita lineárních systémů.md",
+                "diskrétních" => "RMS/Stabilita systémů/Stabilita diskrétních systémů.md",
+                "podle Lyapunova" => "RMS/Stabilita systémů/Stabilita podle Lyapunova.md",
+                ],
+            "Optimální řízení" => [
+                hide("RMS/Optimální řízení/Kritérium optimality.md"),
+                "RMS/Optimální řízení/Bellmanův princip optimality.md",
+                "RMS/Optimální řízení/LQR.md",
+                "RMS/Optimální řízení/Pontrjaginův princip minima.md",
+                "RMS/Optimální řízení/Prediktivní řízení.md",
+                ],
             # "Lineární systémy v časové oblasti" => [
-            "RMS/Stabilita lineárních systémů.md",
             "RMS/Říditelnost lineárního systému.md",
             "RMS/Pozorovatelnost lineárního systému.md",
             "RMS/Výstupní zpětná vazba.md",
@@ -18,14 +29,7 @@ makedocs(
             # ],
             # "Diskrétní lineární systémy" => [
             "RMS/Diskretizace Lineárních Systémů.md",
-            "RMS/Prediktivní řízení.md",
             # ],
-            "Optimální řízení" => [
-                hide("RMS/Optimální řízení/Kritérium optimality.md"),
-                "RMS/Optimální řízení/Bellmanův princip optimality.md",
-                "RMS/Optimální řízení/LQR.md",
-                "RMS/Optimální řízení/Pontrjaginův princip minima.md",
-                ]
             ],
         "Řízené aktivní struktury" => [
             "LAC vs. HAC" => "RAS/LAC vs HAC.md",
