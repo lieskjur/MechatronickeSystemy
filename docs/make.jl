@@ -10,6 +10,7 @@ makedocs(
                 "diskrétních" => "RMS/Stabilita systémů/Stabilita diskrétních systémů.md",
                 "podle Lyapunova" => "RMS/Stabilita systémů/Stabilita podle Lyapunova.md",
                 ],
+            "RMS/Řízení Lyapunovou funkcí.md",
             "Optimální řízení" => [
                 hide("RMS/Optimální řízení/Kritérium optimality.md"),
                 "RMS/Optimální řízení/Bellmanův princip optimality.md",

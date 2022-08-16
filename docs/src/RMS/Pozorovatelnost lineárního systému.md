@@ -22,5 +22,5 @@ Systém je pozorovatelný pokud
 ```math
 \bm{W}_{o}
 =
-\int_{0}^{\infty} e^{\bm{A} \tau} \bm{C} \bm{C}^T e^{\bm{A}^T \tau} d \tau
+\int_{0}^{\infty} e^{\bm{A}^T \tau} \bm{C}^T \bm{C} e^{\bm{A} \tau} d \tau
 ```
