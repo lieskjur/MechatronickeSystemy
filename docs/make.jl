@@ -15,7 +15,7 @@ makedocs(
                 hide("RMS/Optimální řízení/Kritérium optimality.md"),
                 "RMS/Optimální řízení/Bellmanův princip optimality.md",
                 "RMS/Optimální řízení/LQR.md",
-                "RMS/Optimální řízení/Pontrjaginův princip minima.md",
+                # "RMS/Optimální řízení/Pontrjaginův princip minima.md",
                 "RMS/Optimální řízení/Prediktivní řízení.md",
                 ],
             # "Lineární systémy v časové oblasti" => [

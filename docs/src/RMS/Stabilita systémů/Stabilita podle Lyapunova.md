@@ -5,7 +5,7 @@ Stav ``\bm{x}^*=\bm{0}`` je
 
 * lokálně stabilný ve smyslu Lyapunova (i.s.l) [^1] právě když
 ```math
-∀ϵ>0, ∃δ>0 : \|\bm{x}(0)-\bm{x}^*\| ⇒ ∀t \|\bm{x}(t)-\bm{x}^*\| < ϵ
+∀ϵ>0, ∃δ>0 : \|\bm{x}(0)-\bm{x}^*\|<δ ⇒ ∀t \|\bm{x}(t)-\bm{x}^*\| < ϵ
 ```
 * lokálně asymptoticky stabilní právě když je lokálně stabilní i.s.l a také
 ```math
