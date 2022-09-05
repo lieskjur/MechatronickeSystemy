@@ -3,7 +3,7 @@ Linear Quadratic Regulator (LQR)
 
 LQR je určen pro regulaci lineárního systému se stavovou zpětnou vazbou ve tvaru
 ```math
-\bm{\dot{x}}(τ) = \bm{f}(\bm{x}(τ),\bm{u}(\bm{x}(τ))) = \bm{A} \, \bm{x}(τ) + \bm{B} \, \bm{u}(\bm{x}(τ))
+\bm{\dot{x}}(τ) = \bm{A} \, \bm{x}(τ) + \bm{B} \, \bm{u}(\bm{x}(τ))
 ```
 s kvadratickým [kritériem optimality](Kritérium optimality.md)
 ```math
@@ -21,12 +21,17 @@ kde
 
 ---
 
-LQR je postaveno na nalezní řešení *Bellmanovy diferenciální rovnice* [^1]
+Jeho syntéza je založena na nalezní řešení *Bellmanovy diferenciální rovnice* [^1]
 ```math
 \left. -\frac{∂J^*(\bm{x}(t),t)}{∂τ} \right|_{τ=t}
 =
 \min_{\bm{u}} \left(
-	L(\bm{x}(t),\bm{u}(t),t) + \frac{∂J^*(\bm{x}(t),t)}{∂\bm{x}}\bm{f}(\bm{x}(t),\bm{u}(t),t)
+	L(\bm{x}(t),\bm{u}(t),t)
+	+
+	\left.
+		\frac{∂J^*(\bm{x}(t),t)}{∂\bm{x}(τ)}
+	\right|_{τ=t}
+	\bm{f}(\bm{x}(t),\bm{u}(t),t)
 \right)
 ```
 s *Bellmanovou funkcí* [^1] ve tvaru
@@ -36,7 +41,7 @@ J^*(\bm{x}(t),t) = \bm{x}(t)^T \bm{S} \, \bm{x}(t) \;,\quad \bm{S} = \bm{S}^T
 
 ---
 
-Po dosazení Bellmanovy funkce, stavového popisu systému a Lagrangiánu získáváme rovnici [^2]
+Po dosazení výše uvedených tvarů Bellmanovy funkce, stavového popisu systému a Lagrangiánu, získáváme rovnici [^2]
 ```math
 0
 =

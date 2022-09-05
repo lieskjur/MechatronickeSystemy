@@ -15,22 +15,10 @@ kde
 * ``\bm{u}`` vektor vstupů
 * ``\bm{y}`` vektor výstupů
 
-a jeho pozorovatele s identickými charakteristikami ``\bm{A}``, ``\bm{B}``, ``\bm{C}``
+a jeho pozorovatele s identickými charakteristikami ``\bm{A}``, ``\bm{B}``, ``\bm{C}`` a rozšířenou zpětnou vazbou o rozdíl výstupů
 ```math
 \begin{aligned}
-	\dot{\hat{\bm{x}}} &= \bm{A} \hat{\bm{x}} + \bm{B} \hat{\bm{u}}
-	\\
-	\hat{\bm{y}} &= \bm{C} \hat{\bm{x}}
-\end{aligned}
-```
-přičemž jeho vstupy jsou rozšířené o zpětnou vazbu se zesílením ``\bm{L}``
-```math
-\hat{\bm{u}} = \bm{u} + \bm{L}(\bm{y}-\hat{\bm{y}})
-```
-Po dosazení lze systém pozorovatele zapsat jako
-```math
-\begin{aligned}
-	\dot{\hat{\bm{x}}} &= \bm{A} \hat{\bm{x}} + \bm{B} \bm{u} + \bm{L} ( \bm{y} - \hat{\bm{y}} )
+	\dot{\hat{\bm{x}}} &= \bm{A} \hat{\bm{x}} + \bm{B} \hat{\bm{u}} + \bm{L}( \bm{y} - \hat{\bm{y}} )
 	\\
 	\hat{\bm{y}} &= \bm{C} \hat{\bm{x}}
 \end{aligned}

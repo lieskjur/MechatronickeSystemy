@@ -7,7 +7,7 @@ J = ∫_{t_0}^{t_1} L(\bm{x}(τ),\bm{u}(\bm{x}(τ)),τ)\,dτ
 ```
 V libovolném čase ``t`` pak můžeme určit optimální řízení ze stavu ``\bm{x}(t)`` do koncového stavu ``\bm{x}(t_1)``
 ```math
-\bm{u}^*(\bm{x}(τ),τ) = \argmin_{\bm{u}(\bm{x}(τ))} ∫_{t}^{t_1} L(\bm{x}(τ),\bm{u}(\bm{x}(τ)),τ)\,dτ
+\bm{u}^*(\bm{x}(τ)) = \argmin_{\bm{u}(\bm{x}(τ))} ∫_{t}^{t_1} L(\bm{x}(τ),\bm{u}(\bm{x}(τ)),τ)\,dτ
 ```
 *Bellmanovou funkcí* budeme nazýváme kritérium optimality z bodu ``\bm{x}(t)`` do cíle, při optimálním řízení
 ```math
@@ -26,7 +26,7 @@ Pokud hledáme optimální řízení v bodě ``\bm{x}(t)`` můžeme rozdělit ce
 
 S definovanými úseky můžeme Bellmanovu funkci rozepsat do tvaru tzv. *Bellmanovy rovnice*
 ```math
-J^*(\bm{x}(t),t) = \min_{\bm{u}(\bm{x}(τ))} \left( \int_t^{t+Δt} L(\bm{x}(τ),\bm{u}(\bm{x}(τ)),τ) + \,dτ + J^*(\bm{x}(t+Δt),t+Δt) \right)
+J^*(\bm{x}(t),t) = \min_{\bm{u}(\bm{x}(τ))} \left( \int_t^{t+Δt} L(\bm{x}(τ),\bm{u}(\bm{x}(τ)),τ)\,dτ + J^*(\bm{x}(t+Δt),t+Δt) \right)
 ```
 kde
 ```math
@@ -81,8 +81,13 @@ pro kterou, aby byla splněna s ``Δt→0`` musí platit tzv *Bellmanova diferen
 ```math
 \left. -\frac{∂J^*(\bm{x}(t),t)}{∂τ} \right|_{τ=t}
 =
-\min_{\bm{u}} \left(
-	L(\bm{x}(t),\bm{u}(t),t) + \frac{∂J^*(\bm{x}(t),t)}{∂\bm{x}}\bm{f}(\bm{x}(t),\bm{u}(t),t)
+\min_{\bm{u}(\bm{x}(t))} \left(
+	L(\bm{x}(t),\bm{u}(t),t)
+	+
+	\left.
+		\frac{∂J^*(\bm{x}(t),t)}{∂\bm{x}(τ)}
+	\right|_{τ=t}
+	\bm{f}(\bm{x}(t),\bm{u}(t),t)
 \right)
 ```
 kde je integrál approximován pomocí Reimannova součtu a ``Δt`` vykráceno [^2].

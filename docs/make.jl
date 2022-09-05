@@ -15,7 +15,7 @@ makedocs(
                 hide("RMS/Optimální řízení/Kritérium optimality.md"),
                 "RMS/Optimální řízení/Bellmanův princip optimality.md",
                 "RMS/Optimální řízení/LQR.md",
-                # "RMS/Optimální řízení/Pontrjaginův princip minima.md",
+                "RMS/Optimální řízení/Pontrjaginův princip minima.md",
                 "RMS/Optimální řízení/Prediktivní řízení.md",
                 ],
             # "Lineární systémy v časové oblasti" => [
@@ -23,6 +23,8 @@ makedocs(
             "RMS/Pozorovatelnost lineárního systému.md",
             "RMS/Výstupní zpětná vazba.md",
             "RMS/Stavový Pozorovatel.md",
+            "RMS/Linearizace systému.md",
+            "RMS/SDRE.md",
             # ],
             # "Lineární systémy ve frekvenční oblasti \Rightarrow ["
             "RMS/Převod stavového popisu systému na přenosový popis.md",

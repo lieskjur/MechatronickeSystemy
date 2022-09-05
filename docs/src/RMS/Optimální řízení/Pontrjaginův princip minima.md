@@ -1,36 +1,52 @@
 Pontrjaginův princip minima
 ===========================
 
-Při Pontrjaginova principu minima nahrazujeme funkci ``F(\bm{x}(τ),\bm{u}(τ),τ)`` ve variační úloze, odvozené z [Bellmanova principu optimality](Bellmanův princip optimality.md), Hamiltoniánem
+Pokud definujeme tzv. *Hamiltonovu funkci*
 ```math
-H(\bm{x}(τ),\bm{u}(τ),\bm{λ}(τ),τ) = L(\bm{x}(τ),\bm{u}(τ),τ) + \bm{\lambda}(τ)^T \bm{f}(\bm{x}(τ),\bm{u}(τ),τ)
-```
-kde (stavový) vektor multiplikátorů ``\bm{λ}(τ)`` zastupuje okamžitou parciální derivaci Bellmanovy funkce
-```math
-\bm{λ}(τ)^T = \frac{∂J^*(\bm{x}(τ),t)}{∂\bm{x}(τ)}
-```
-Tzn. řešíme vázanou variační úlohu
-```math
-0
+H \left(
+	\bm{p},\bm{x},\bm{u},τ
+\right)
 =
-\min_{\bm{u}(τ)}
-∫_t^{t+Δt}
-H(\bm{x}(τ),\bm{u}(τ),\bm{λ}(\bm{u}(τ)),τ)
-\ dτ
-```
-s pevným koncem ``\bm{x}(t)`` kde funkce ``\bm{\dot{x}}(τ) = \bm{f}(\bm{x}(τ),\bm{u}(τ),τ)`` je algebraická vedlejší podmínka.
-
----
-
-Optimální trajektorii ``\bm{x}(τ) \,,\; τ ∈ ⟨t_0,t_1⟩`` lze získat zavedením soustavy
-```math
-\begin{aligned}
-	\bm{\dot{x}} &= \frac{∂H}{∂\bm{λ}(τ)}(\bm{x}(τ),\bm{u}^*(\bm{x}(τ),τ),\bm{λ}(τ),τ) \\
-	\bm{\dot{λ}} &= - \frac{∂H}{∂\bm{x}(τ)}(\bm{x}(τ),\bm{u}^*(\bm{x}(τ),τ),\bm{λ}(τ),τ)
-\end{aligned}
+L(\bm{x},\bm{u},τ) + \bm{p}^T \bm{f}(\bm{x},\bm{u},τ)
 ```
 kde
 ```math
-\bm{u}^*(\bm{x}(τ),τ) = \argmin_{\bm{u}(τ)} \bm{H}(\bm{x}(τ),\bm{u}(τ),\bm{λ}(τ),τ)
+\bm{p}^*(τ) = \frac{∂J^*(\bm{x}(τ),τ)}{∂\bm{x}(τ)}
 ```
-je optimální řízení. Počáteční podmínku v podobě pevného konce ``\bm{x}(t_0) = \bm{x}_0`` z variační úlohy většinou doplňujeme podmínkou dosažení cíle ``\bm{x}(t_1) = \bm{x}_1`` a hledáme druhou počáteční podmínku ``\bm{λ}(t_0) = \bm{λ}_0``, která by ho zaručila.
+
+můžeme psat *Bellmanovu diferenciální rovnici* [^1] jako
+```math
+-\frac{∂J^*(\bm{x}(t),t)}{∂τ}
+=
+\min_{\bm{u}} H (\bm{p}^*(τ),\bm{x},\bm{u},τ)
+```
+
+---
+
+na optimální trajektorii ``\bm{x}^*(t)`` nabývá 
+```math
+\bm{p}^*(t)
+=
+\left.
+\frac{∂J^*(\bm{x}(t),t)}{∂\bm{x}(τ)}
+\right|_{\bm{x}(τ) = \bm{x}^*(t)}
+```
+a optimální řízení ``\bm{u}^*(t)`` lze získat jako
+```math
+\bm{u}^*(t) = \argmin_{\bm{u}(t)} \bm{H}(\bm{p}^*(t),\bm{x}^*(t),\bm{u}(t),t)
+```
+přičemž derivace ``\bm{\dot{x}}(t)`` a ``\bm{\dot{p}}(t)`` ve stavu ``\bm{x}(t)`` nabývají hodnot
+```math
+\begin{aligned}
+	\bm{\dot{x}}(τ)
+	&=
+	\left. \frac{∂H(\bm{p}(τ),\bm{x}(τ),\bm{u}^*(\bm{x}(τ)),τ)}{∂\bm{p}(τ)}
+	\right|_{τ=t}  \\
+	\bm{\dot{p}}(τ)
+	&=
+	\left. - \frac{∂H(\bm{p}(τ),\bm{x}(τ),\bm{u}^*(\bm{x}(τ)),τ)}{∂\bm{x}(τ)}
+	\right|_{τ=t}
+\end{aligned}
+```
+
+[^1]: [Belmannův princip optimality](Bellmanův princip optimality.md)
